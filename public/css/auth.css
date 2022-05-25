@@ -1,0 +1,166 @@
+/*
+  Colors: http://getuicolors.com
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.error {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color: var(--red);
+}
+
+#main-container {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+}
+
+.error--hidden {
+  display: none;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #00ccf2, #32eb5b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+}
+
+.b-card {
+  transform-style: preserve-3d;
+  display: flex;
+  min-width: 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  width: 40%;
+  backdrop-filter: blur(2rem);
+  border-radius: 2.25rem;
+  min-height: 60vh;
+  z-index: 2;
+  filter: drop-shadow(0rem 15rem 15rem rgba(0, 0, 0, 0.25));
+}
+
+@media screen and (max-width: 1067px) {
+  .b-card {
+    transform-style: preserve-3d;
+    display: flex;
+    min-width: 0;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    width: 50%;
+    backdrop-filter: blur(2rem);
+    border-radius: 2.25rem;
+    min-height: 60vh;
+    z-index: 2;
+    filter: drop-shadow(0rem 15rem 15rem rgba(0, 0, 0, 0.25));
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .b-card {
+    transform-style: preserve-3d;
+    display: flex;
+    min-width: 0;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    width: 75%;
+    backdrop-filter: blur(2rem);
+    border-radius: 2.25rem;
+    min-height: 60vh;
+    z-index: 2;
+    filter: drop-shadow(0rem 15rem 15rem rgba(0, 0, 0, 0.25));
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .b-card {
+    transform-style: preserve-3d;
+    display: flex;
+    min-width: 0;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    width: 95%;
+    backdrop-filter: blur(2rem);
+    border-radius: 2.25rem;
+    min-height: 60vh;
+    z-index: 2;
+    filter: drop-shadow(0rem 15rem 15rem rgba(0, 0, 0, 0.25));
+  }
+}
+
+/* Buttons */
+.btn-b {
+  margin: 0 0 24px;
+  padding: 11px 30px 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.15s ease, background-color 0.15s ease;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  filter: drop-shadow(0rem 1.5rem 1.5rem rgba(0, 0, 0, 0.25));
+  transform-style: preserve-3d;
+}
+
+input[type="submit"] {
+  margin: 34px auto 24px;
+  display: block;
+}
+
+.buddiey-logo {
+  transform-style: preserve-3d;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0rem 15rem 15rem rgba(0, 0, 0, 0.25));
+  transition: all 0.75s ease-out;
+}
+
+#title {
+  transform-style: preserve-3d;
+}
+
+#email {
+  transform-style: preserve-3d;
+}
+
+#password {
+  transform-style: preserve-3d;
+}
