@@ -5,8 +5,12 @@ const mongoose = require('mongoose');
 
 // Create our new schema
 const messageSchema = new mongoose.Schema({
-    email: {
+    username: {
         type: String,
+        required: true
+    },
+    isBuddy: {
+        type: Boolean,
         required: true
     },
     message: {
